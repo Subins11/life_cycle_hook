@@ -1,0 +1,9 @@
+<div class="input" >
+ <input type="text" #input>
+ <button (click)="onSubmit(input)">Submit</button>
+ <app-child [value]="inputText" *ngIf="destroy">
+  <p>This Is a Projected Content {{inputText}}</p>
+</app-child>
+<br><br>
+<button (click)="onDestroy()">Destroy</button>
+</div>
